@@ -1,0 +1,146 @@
+:root {
+   --light-orange: #ffb886;
+   --bright-orange : #f5720c;
+   --dark-orange : #be5505;
+   --medium-orange: #d67a35;
+ }
+
+[class*="col-"]{
+  width: 100%;
+}
+@media only screen and (min-width: 768px){
+[class*="col-"]{
+  float: left;
+  padding:15px;
+}
+.col-1{ width: 8.33%;}
+.col-2{ width: 16.66%;}
+.col-3{ width: 25%;}
+.col-4{ width: 33.33%;}
+.col-5{ width: 41.66%;}
+.col-6{ width: 50%;}
+.col-7{ width: 58.33%;}
+.col-8{ width: 66.66%;}
+.col-9{ width: 75%;}
+.col-10{ width: 83.33%;}
+.col-11{ width: 91.66%;}
+.col-12{ width: 100%;}
+}
+
+* {font-family: 'IBM Plex Sans Thai', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+body {
+  background-color: var(--light-orange);
+}
+.tekst {
+  line-height: 18px;
+}
+
+ /* ----- HEADER ----- */
+
+header {
+  text-align: center;
+  padding: 50px;
+  background-color: var(--bright-orange);
+  color: white;
+}
+header > h1 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+header > h4 {
+  font-weight: 400;
+}
+
+/* ----- NAVIGATIE ----- */
+
+#navigatie {
+  border-bottom: 3px solid yellow;
+}
+#navigatie > ul {
+  padding: 0px;
+  margin: 0px;
+  background-color: var(--dark-orange);
+}
+#navigatie > ul > li {
+  display: block;
+  padding: 10px;
+  list-style-type: none;
+  text-align: center;
+}
+@media only screen and (min-width: 768px){
+  #navigatie > ul > li {
+    display: inline-block;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+  }
+}
+#navigatie > ul > li a {
+  text-decoration: none;
+  color: white;
+}
+#navigatie > ul > li:hover {
+  background-color: var(--medium-orange);
+}
+
+/* ----- LINKERKANT ----- */
+
+.links{
+  margin: 0;
+  padding: 0;
+}
+
+#content > .row > .links > #linkerkant  {
+  padding: 20px 10px;
+}
+#content > .row > .links > #linkerkant > #tarieven {
+  border-collapse: collapse;
+  border: none;
+}
+#content > .row > .links > #linkerkant > #tarieven > td, tr {
+  border-bottom : 2px inset lightgrey;
+}
+#content > .row > .links > #linkerkant > #tarieven > td, tr > .no-bottom-line {
+  border-bottom: 2px solid var(--light-orange);
+}
+/* ----- MAIN ----- */
+.hoofdmenu{
+  margin: 0;
+  padding: 0;
+}
+#content > .row > .hoofdmenu {
+  background-color: white;
+  padding: 20px 10px;
+  min-height: calc( 100vh - 323px );
+}
+#content > .row > .hoofdmenu > #main > .voorwaarden > h2 {
+  color: var(--dark-orange);
+}
+
+.artikel-tabel {
+  border-collapse: collapse;
+  border : none;
+  width: 100%;
+}
+/*
+.artikel-tabel > td, tr {
+  border-bottom : 1px solid silver;
+}*/
+.artikel-tabel > td:last-child, tr:last-child{
+  border-bottom: 1px solid white;
+}
+
+footer {
+  clear: both;
+  background-color: var(--dark-orange);
+  text-align: center;
+  font-weight: 300;
+  line-height: 14px;
+  padding: 30px;
+  font-size: 13px;  
+}

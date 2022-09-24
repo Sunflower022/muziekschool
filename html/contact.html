@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="An Bex">
+    <meta name="description" content="praktijkexamen webdesign - muziekschool H&J - contact">
+    <meta name="keywords" content="NHA praktijkexamen webdesign muziekschool H&J contact">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>HJ - Contact</title>
+  </head>
+  <body>
+    <header>
+      <h1><strong>Muziekschool H&J</strong> </h1>
+      <h4>Contact</h4>
+    </header>
+
+    <nav id="navigatie">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="overons.html">Over ons</a></li>
+        <li><a href="tarieven.html">Tarieven</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="content">
+      <div class="row">
+        <div class="col-3 links">
+          <div id="linkerkant">
+            <h2>Adresgegevens</h2>
+            <p>Muziekschool H&J</p>
+            <p>t.a.v Hannah en Jesse</p>
+            <p>Industrieterrein 37</p>
+            <p>5981 NK Panningen</p>
+            <p><a href="tel:0123-456789">0123-456789</a> </p>
+            <p><a href="mailto:muziekschoolhj@inlook.com">muziekschoolhj@inlook.com</a> </p>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.7497954868577!2d5.976007815920233!3d51.33412173117855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7485bd60bbd61%3A0x73a8c69eb69bad56!2sNHA%20Opleidingen!5e0!3m2!1snl!2sbe!4v1663962518980!5m2!1snl!2sbe" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-9 hoofdmenu">
+          <div id="main">
+            <article class="contact">
+              <h2>Contact</h2>
+              <h5>U kunt een bericht achterlaten via onderstaand contactformulier.</h5> <br>
+              <form action="https://formspree.io/f/xnqrddwl" method="post">
+                <fieldset>
+                  <label for="voornaam">Uw voornaam</label> <br>
+                  <input type="text" name="voornaam" value="" placeholder="Uw voornaam" id="voornaam"> <br>
+                  <label for="achternaam">Uw achternaam</label><br>
+                  <input type="text" name="achternaam" value="" placeholder="Uw achternaam" id="achternaam"><br>
+                  <label for="e-mailadres">Uw e-mailadres</label><br>
+                  <input type="email" name="e-mailadres" value="" placeholder="Uw e-mailadres" id="e-mailadres"><br>
+                  <label for="land">Land</label><br>
+                  <select name="land" id="land">
+                    <option value="NL">Nederland</option>
+                    <option value="BE">België</option>
+                    <option value="DE">Duitsland</option>
+                  </select>
+                  <br>
+                  <label for="bericht">Bericht</label><br>
+                  <textarea name="bericht" rows="8" cols="60" placeholder="Uw bericht hier" id="bericht"></textarea>
+                  <br>
+                  <button type="submit" name="verzenden">Verzend</button>
+                </fieldset>
+              </form>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p><b>© Copyright 2021 Muziekschool H&J</b></p>
+      <p><b>(Dit is een oefenopdracht, alle informatie op deze website is fictief.)</b></p>
+    </footer>
+
+  </body>
+</html>
